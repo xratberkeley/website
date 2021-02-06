@@ -3,7 +3,8 @@
 ## Maintainers
 When you push, only this GitHub repository will be updated. To modify the live website, you will also have to pull the changes from within OCF, our hosting platform.
 
-```ssh vrab@ssh.ocf.berkeley.edu
+```
+ssh vrab@ssh.ocf.berkeley.edu
 cd public_html
 git pull origin master
 ```
