@@ -19,10 +19,10 @@ Advanced users may also want to look at SSHFS, which allows making changes direc
 `assets/css` Stylesheets shared by all pages. <br>
 `assets/fonts` Fonts shared by all pages. <br>
 `assets/footer.html` The footer to add at the bottom of every page. <br>
-`decal/` The XR DeCal website.
+`decal/` The DeCal website.
 
 ## Using the Footer
-You may easily add the footer containing the disclaimer and links to our social media on every new page you create, by simply inserting at its bottom:
+You may easily add the footer (containing the disclaimer and links to our social media) on every new page you create, by simply inserting at its bottom:
 ```
 <iframe id="iframe_footer" src="assets/footer.html" scrolling="no"></iframe>
 ```
