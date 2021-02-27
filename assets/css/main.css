@@ -1591,9 +1591,9 @@
 	}
 
     /*Disable the scrollbar, keeping scroll functionality.*/
-    html::-webkit-scrollbar {
-        display: none;
-    }
+    /*html::-webkit-scrollbar {*/
+        /*display: none;*/
+    /*}*/
 
     /*Disable the scrollbar, keeping scroll functionality.*/
     html {
