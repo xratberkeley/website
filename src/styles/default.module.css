@@ -1,0 +1,32 @@
+/* default styles across site */
+
+@font-face {
+    font-family: "SpaceMono";
+    src: local("SpaceMono"),
+     url("../fonts/SpaceMono-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "HYShortSamul";
+    src: local("HYShortSamul"),
+     url("../fonts/HYShortSamul-Medium.ttf") format("truetype");
+    font-weight: normal;
+}
+    
+
+body {
+    background-color: #222035;
+}
+
+h1 {
+    color: #F5F5F5;
+    font-family: "HYShortSamul";
+    font-weight: normal;
+}
+
+p {
+    color: #F5F5F5;
+    font-family: "SpaceMono";
+    font-weight: normal;
+}
