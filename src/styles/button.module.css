@@ -1,0 +1,121 @@
+.img {
+    max-height: 12px;
+    margin-bottom: 6px;
+    margin-left: 12px;
+}
+
+.purpleCorners {
+    background:
+        linear-gradient(to right, var(--white) 1px, transparent 1px) 0 0,
+        linear-gradient(to right, var(--white) 1px, transparent 1px) 0 100%,
+        linear-gradient(to left, var(--white) 1px, transparent 1px) 100% 0,
+        linear-gradient(to left, var(--white) 1px, transparent 1px) 100% 100%,
+        linear-gradient(to bottom, var(--white) 1px, transparent 1px) 0 0,
+        linear-gradient(to bottom, var(--white) 1px, transparent 1px) 100% 0,
+        linear-gradient(to top, var(--white) 1px, transparent 1px) 0 100%,
+        linear-gradient(to top, var(--white) 1px, transparent 1px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+}
+
+.redUnderline {
+    color: var(--red);
+    border-bottom: 2px solid var(--red);
+    padding: 0 4px 2px 4px;
+    margin-left: -4px;
+}
+
+.redHover {
+    color: var(--red);
+    box-shadow: 0 0 0 2px var(--yellow);
+    background-color: var(--yellow-transparent-light);
+    padding: 0 4px 2px 4px;
+    margin-left: -4px;
+}
+
+.yellow {
+    padding: 9px 16px 3px 16px;
+    color: var(--yellow);
+    font-family: "HYShortSamul";
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 1.8px;
+    background-color: var(--yellow-transparent);
+    border: 1px solid var(--yellow);
+    visibility: visible;
+}
+
+.yellowHover {
+    background:
+        linear-gradient(to right, var(--yellow) 1px, transparent 1px) 0 0,
+        linear-gradient(to right, var(--yellow) 1px, transparent 1px) 0 100%,
+        linear-gradient(to left, var(--yellow) 1px, transparent 1px) 100% 0,
+        linear-gradient(to left, var(--yellow) 1px, transparent 1px) 100% 100%,
+        linear-gradient(to bottom, var(--yellow) 1px, transparent 1px) 0 0,
+        linear-gradient(to bottom, var(--yellow) 1px, transparent 1px) 100% 0,
+        linear-gradient(to top, var(--yellow) 1px, transparent 1px) 0 100%,
+        linear-gradient(to top, var(--yellow) 1px, transparent 1px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+
+    padding: 12px 4px 7px 4px;
+    width: fit-content;
+}
+
+.purple {
+    padding: 9px 16px 3px 16px;
+    color: var(--purple);
+    font-family: "HYShortSamul";
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 1.8px;
+    background-color: var(--purple-transparent-light);
+    border: 1px solid var(--purple);
+    visibility: visible;
+}
+
+.purpleHover {
+    background:
+        linear-gradient(to right, var(--purple) 1px, transparent 1px) 0 0,
+        linear-gradient(to right, var(--purple) 1px, transparent 1px) 0 100%,
+        linear-gradient(to left, var(--purple) 1px, transparent 1px) 100% 0,
+        linear-gradient(to left, var(--purple) 1px, transparent 1px) 100% 100%,
+        linear-gradient(to bottom, var(--purple) 1px, transparent 1px) 0 0,
+        linear-gradient(to bottom, var(--purple) 1px, transparent 1px) 100% 0,
+        linear-gradient(to top, var(--purple) 1px, transparent 1px) 0 100%,
+        linear-gradient(to top, var(--purple) 1px, transparent 1px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+
+    padding: 12px 4px 7px 4px;
+    width: fit-content;
+}
+
+.red {
+    padding: 9px 16px 3px 16px;
+    color: var(--red);
+    font-family: "HYShortSamul";
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 1.8px;
+    background-color: var(--red-transparent);
+    border: 1px solid var(--red);
+    visibility: visible;
+}
+
+.redHoverBox {
+    background:
+        linear-gradient(to right, var(--red) 1px, transparent 1px) 0 0,
+        linear-gradient(to right, var(--red) 1px, transparent 1px) 0 100%,
+        linear-gradient(to left, var(--red) 1px, transparent 1px) 100% 0,
+        linear-gradient(to left, var(--red) 1px, transparent 1px) 100% 100%,
+        linear-gradient(to bottom, var(--red) 1px, transparent 1px) 0 0,
+        linear-gradient(to bottom, var(--red) 1px, transparent 1px) 100% 0,
+        linear-gradient(to top, var(--red) 1px, transparent 1px) 0 100%,
+        linear-gradient(to top, var(--red) 1px, transparent 1px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+
+    padding: 12px 4px 7px 4px;
+    width: fit-content;
+}

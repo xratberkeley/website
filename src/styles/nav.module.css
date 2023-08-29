@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "HYShortSamul";
+    src: local("HYShortSamul"),
+     url("../fonts/HYShortSamul-Medium.ttf") format("truetype");
+    font-weight: normal;
+}
+
+.navBar {
+    margin: 40px -1em 0 -1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1rem 5%;
+    background-color: rgba(160, 255, 227, 0.13);
+    border-top: 1px solid var(--blue);
+    border-bottom: 1px solid var(--blue);
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: calc(5% + 1em);
+    top: 12%;
+    height: 5.5em;
+    width: 5.5em;
+}
+
+.item {
+    color: var(--blue);
+    font-family: "HYShortSamul";
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 1.8px;
+    padding: 4px 1.5em 0 2em;
+    border: 1px solid transparent;
+    
+}
+
+.active {
+    color: var(--blue);
+    font-family: "HYShortSamul";
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 1.8px;
+    padding: 4px 1.5em 0 1.5em;
+
+    background:
+        linear-gradient(to right, var(--white) 1px, transparent 1px) 0 0,
+        linear-gradient(to right, var(--white) 1px, transparent 1px) 0 100%,
+        linear-gradient(to left, var(--white) 1px, transparent 1px) 100% 0,
+        linear-gradient(to left, var(--white) 1px, transparent 1px) 100% 100%,
+        linear-gradient(to bottom, var(--white) 1px, transparent 1px) 0 0,
+        linear-gradient(to bottom, var(--white) 1px, transparent 1px) 100% 0,
+        linear-gradient(to top, var(--white) 1px, transparent 1px) 0 100%,
+        linear-gradient(to top, var(--white) 1px, transparent 1px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+}
