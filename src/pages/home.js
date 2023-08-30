@@ -21,7 +21,7 @@ const HomePage = () => {
   const [shown, setShown] = useState("");
   const [windowHeight, setHeight] = useState(150);
   useEffect(() => {
-    setHeight(document.body.scrollHeight + windowHeight);
+    setHeight(0);
   }, []);
 
   return (
@@ -42,13 +42,13 @@ const HomePage = () => {
                 Welcome to <span className={defaultStyles.yellow}>Extended Reality @ Berkeley</span>.
               </p>
               <p>
-                We seek to foster an inclusive and diverse community of Berkeley students, 
-                industry, and academia to increase public awareness of <span className={defaultStyles.blue}>virtual reality</span> (VR) 
-                and <span className={defaultStyles.blue}>augmented reality</span> (AR). 
+                We seek to foster an inclusive and diverse community of Berkeley students,
+                industry, and academia to increase public awareness of <span className={defaultStyles.blue}>virtual reality</span> (VR)
+                and <span className={defaultStyles.blue}>augmented reality</span> (AR).
               </p>
               <p>
-                We provide developer resources and training, and promote dialogue about the impact and implications of immersive computing. 
-                Our members receive training in cutting edge technology, develop on the newest VR platforms, 
+                We provide developer resources and training, and promote dialogue about the impact and implications of immersive computing.
+                Our members receive training in cutting edge technology, develop on the newest VR platforms,
                 and explore the <span className={defaultStyles.blue}>intersection of physical and virtual space</span>.
               </p>
 
@@ -69,14 +69,14 @@ const HomePage = () => {
                   <div className={homeStyles.applyButtons}>
                     <Button text="Club member application"
                             color="red"
-                            icon="" 
+                            icon=""
                             type="out"
                             link="https://docs.google.com/forms/d/e/1FAIpQLSd2NrJxdfr-37AW8MdKcOs3o3Wy08UG8k1gCYp7MFsEh6udJg/viewform"
                             alt="member application"
                     />
                     <Button text="DeCal application"
                             color="red"
-                            icon="" 
+                            icon=""
                             type="out"
                             link="https://docs.google.com/forms/d/e/1FAIpQLScARHg_xaUnHuJ3fIw8SfKxU2hBVyxOMOdJr7VEL5HNU8hs1A/viewform"
                             alt="decal application"
@@ -87,19 +87,19 @@ const HomePage = () => {
                   </p>
                 </div>
               </div>
-            
+
               <div className={homeStyles.boxLine}>
                 <div className={homeStyles.box}></div>
                 <div className={homeStyles.box}></div>
               </div>
-              
+
               {/* sections */}
               <div className={homeStyles.section}>
                 <p className={defaultStyles.grey}>Dream the change.</p>
                 <p>Check out our <span onMouseEnter={() => setShown("project teams")}>
                   <Button text="project teams"
                           color="red"
-                          icon={shown} 
+                          icon={shown}
                           type="show"
                           link=""
                           alt=""
@@ -111,7 +111,7 @@ const HomePage = () => {
                 <p>Become a <span onMouseEnter={() => setShown("sponsor")}>
                   <Button text="sponsor"
                           color="red"
-                          icon={shown} 
+                          icon={shown}
                           type="show"
                           link=""
                           alt=""
@@ -123,7 +123,7 @@ const HomePage = () => {
                 <p>Check out our <span onMouseEnter={() => setShown("decal")}>
                   <Button text="DeCal"
                           color="red"
-                          icon={shown} 
+                          icon={shown}
                           type="show"
                           link=""
                           alt=""
@@ -135,7 +135,7 @@ const HomePage = () => {
                 <p>Join us in <span onMouseEnter={() => setShown("cvre")}>
                   <Button text="Collegiate VR Esports"
                           color="red"
-                          icon={shown} 
+                          icon={shown}
                           type="show"
                           link=""
                           alt=""
@@ -165,25 +165,25 @@ const HomePage = () => {
               <div className={homeStyles.buttonWrapper}>
                 <Button
                   text="Hear from us"
-                  color="purple" 
-                  icon={mailIcon} 
+                  color="purple"
+                  icon={mailIcon}
                   link="https://docs.google.com/forms/d/e/1FAIpQLSeCBIxOfEhPJx3JxXPbFr9ZfGf7zQZ2O-XgSWDZabY7xjmujw/viewform"
                   alt="mailing list google form"
                   type="out"
                 />
               </div>
               <div className={homeStyles.buttonWrapper}>
-                <Button 
+                <Button
                   text="Talk to us"
-                  color="yellow" 
-                  icon={discordIcon} 
+                  color="yellow"
+                  icon={discordIcon}
                   link="https://discord.com/invite/GvGUUCN"
                   alt="discord link"
                   type="nav"
                 />
               </div>
-              
-              
+
+
             </div>
 
             {shown == "project teams" ? <ProjectTeams /> : ""}

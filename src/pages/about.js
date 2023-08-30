@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby";
 
-import * as aboutStyles from "../styles/about.module.css"
 import * as defaultStyles from "../styles/default.module.css"
+import * as aboutStyles from "../styles/about.module.css"
 
 import Nav from "../components/nav"
 import MemberCard from "../components/memberCard"
