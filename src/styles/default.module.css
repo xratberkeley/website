@@ -3,15 +3,17 @@
 @font-face {
     font-family: "SpaceMono";
     src: local("SpaceMono"),
-     url("../fonts/SpaceMono-Regular.ttf") format("truetype");
+     url("../fonts/SpaceMono-Regular.woff") format("woff");
     font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "HYShortSamul";
     src: local("HYShortSamul"),
-     url("../fonts/HYShortSamul-Medium.ttf") format("truetype");
+     url("../fonts/HYShortSamul-Medium.woff") format("woff");
     font-weight: normal;
+    font-style: normal;
 }
 
 :root {
@@ -28,7 +30,7 @@
     --blue-transparent: rgba(160, 255, 227, 0.13);
     --red-transparent: rgba(255, 42, 109, 0.19);
 }
-    
+
 
 body {
     background-color: #222035;
