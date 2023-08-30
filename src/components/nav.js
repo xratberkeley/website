@@ -8,6 +8,19 @@ import * as defaultStyles from "../styles/default.module.css"
 
 const Nav = ({activePage}) => {
 
+  // if (activePage == "decal") {
+  //   return (
+  //     <section>
+  //       <div className={navStyles.navBarDecal}>
+  //         <Link to="/home/">
+  //           <img className={navStyles.logo} src={logo} alt="logo" />
+  //         </Link>
+  //         <div className={navStyles.item} style={{visibility: 'hidden'}}>.</div>
+  //       </div>
+  //     </section>
+  //   )
+  // }
+
   return (
     <section>
       <div className={navStyles.navBar}>
@@ -23,9 +36,9 @@ const Nav = ({activePage}) => {
       <Link to="/projects/">
         <div className={activePage=="projects" ? navStyles.active : navStyles.item}>Projects</div>
       </Link>
-      <Link to="/decal/">
+      <a href="xr.berkeley.edu/decal/" target="_blank">
         <div className={activePage=="decal" ? navStyles.active : navStyles.item}>Decal</div>
-      </Link>
+      </a>
       <a href="https://discord.com/invite/GvGUUCN" target="_blank">
       <div className={navStyles.item}>Discord</div>
       </a>

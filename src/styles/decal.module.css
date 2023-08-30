@@ -1,0 +1,39 @@
+.bodyWrapper {
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.textWrapper {
+    margin: 60px 5% 100px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.redLink {
+    display: inline-block;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: -0.4em;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: -0.4em;
+}
+
+.box {
+    height: 14px;
+    width: 12px;
+    background-color: var(--blue);
+    line-height: 18px;
+}
+
+.boxLine {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
