@@ -21,7 +21,7 @@ const HomePage = () => {
   const [shown, setShown] = useState("");
   const [windowHeight, setHeight] = useState(150);
   useEffect(() => {
-    setHeight(0);
+    setHeight(document.body.scrollHeight + windowHeight);
   }, []);
 
   return (

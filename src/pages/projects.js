@@ -25,7 +25,6 @@ const ProjectsPage = () => {
   const [windowHeight, setHeight] = useState(250);
   useEffect(() => {
     setHeight(document.body.scrollHeight + windowHeight);
-    document.body.scrollTop = 0;
   }, []);
 
   return (

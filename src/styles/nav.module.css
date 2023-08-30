@@ -47,13 +47,13 @@
 }
 
 .active {
-  color: var(--blue);
-  font-family: "HYShortSamul";
-  font-weight: normal;
-  font-size: 24px;
-  letter-spacing: 1.8px;
-  padding: 4px 1.5em 0 1.5em;
-  border: 1px solid transparent;
+    color: var(--blue);
+    font-family: "HYShortSamul";
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 1.8px;
+    padding: 4px 1.5em 0 1.5em;
+    border: 1px solid transparent;
 
     background:
         linear-gradient(to right, var(--white) 1px, transparent 1px) 0 0,
