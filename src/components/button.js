@@ -22,6 +22,19 @@ const Button = ({text, color, icon, type, link, alt}) => {
         )
     }
 
+    else if (type == "underlineOut") {
+        return (
+            <section>
+                <p className={hover ? buttonStyles.redHover : buttonStyles.redUnderline}
+                onMouseEnter={() => setHover(true)}
+                onMouseLeave={() => setHover(false)}
+                >
+                    <a href={link} alt={alt}>{text}&nbsp;<EastIcon className={defaultStyles.arrow}/></a>
+                </p>
+            </section>
+        )
+    }
+
     else if (type == "show") {
         return (
             <section>
