@@ -40,22 +40,24 @@ const ProjectsPage = () => {
               <div className={projectStyles.pImg}>
                 <img src={blossom} alt="blossom vr" />
               </div>
-              <Button
-                    text="Learn more"
-                    color="yellow"
-                    icon=""
-                    type="out"
-                    link="https://blossomvr.com/"
-                    alt="blossom vr website"
-                />
+              <div className={projectStyles.buttons}>
                 <Button
-                    text="Contact us"
-                    color="purple"
-                    icon={mailIcon}
-                    type="out"
-                    link="mailto:blossom@xr.berkeley.edu"
-                    alt="blossom email"
-                />
+                      text="Learn more"
+                      color="yellow"
+                      icon=""
+                      type="out"
+                      link="https://blossomvr.com/"
+                      alt="blossom vr website"
+                  />
+                  <Button
+                      text="Contact us"
+                      color="purple"
+                      icon={mailIcon}
+                      type="out"
+                      link="mailto:blossom@xr.berkeley.edu"
+                      alt="blossom email"
+                  />
+                </div>
             </div>
             <div className={projectStyles.text}>
               <h1 className={projectStyles.pTitle}>Blossom VR</h1>
@@ -81,22 +83,24 @@ const ProjectsPage = () => {
               <div className={projectStyles.yImg}>
                 <img src={isaacs} alt="isaacs" />
               </div>
-              <Button
-                    text="Learn more"
-                    color="yellow"
-                    icon=""
-                    type="out"
-                    link="https://github.com/immersive-command-system"
-                    alt="isaacs"
-                />
+              <div className={projectStyles.buttons}>
                 <Button
-                    text="Contact us"
-                    color="purple"
-                    icon={mailIcon}
-                    type="out"
-                    link="mailto:isaacs@xr.berkeley.edu"
-                    alt="isaacs email"
-                />
+                      text="Learn more"
+                      color="yellow"
+                      icon=""
+                      type="out"
+                      link="https://github.com/immersive-command-system"
+                      alt="isaacs"
+                  />
+                  <Button
+                      text="Contact us"
+                      color="purple"
+                      icon={mailIcon}
+                      type="out"
+                      link="mailto:isaacs@xr.berkeley.edu"
+                      alt="isaacs email"
+                  />
+                </div>
             </div>
             <div className={projectStyles.text}>
               <h1 className={projectStyles.yTitle}>ISAACS (Research) - Immersive Semi-Autonomous Aerial Command System</h1>
@@ -119,22 +123,24 @@ const ProjectsPage = () => {
               <div className={projectStyles.pImg}>
                 <img src={tutorivr} alt="tutorivr" />
               </div>
-              <Button
-                    text="Learn more"
-                    color="yellow"
-                    icon=""
-                    type="out"
-                    link="https://dl.acm.org/doi/10.1145/3290605.3300514"
-                    alt="tutorivr website"
-                />
+              <div className={projectStyles.buttons}>
                 <Button
-                    text="Contact us"
-                    color="purple"
-                    icon={mailIcon}
-                    type="out"
-                    link="mailto:tutorivr@xr.berkeley.edu"
-                    alt="tutorivr email"
-                />
+                      text="Learn more"
+                      color="yellow"
+                      icon=""
+                      type="out"
+                      link="https://dl.acm.org/doi/10.1145/3290605.3300514"
+                      alt="tutorivr website"
+                  />
+                  <Button
+                      text="Contact us"
+                      color="purple"
+                      icon={mailIcon}
+                      type="out"
+                      link="mailto:tutorivr@xr.berkeley.edu"
+                      alt="tutorivr email"
+                  />
+                </div>
             </div>
             <div className={projectStyles.text}>
               <h1 className={projectStyles.pTitle}>TutoriVR</h1>
@@ -160,22 +166,24 @@ const ProjectsPage = () => {
               <div className={projectStyles.yImg}>
                 <img src={vbw} alt="vbw" />
               </div>
-              <Button
-                    text="Learn more"
-                    color="yellow"
-                    icon=""
-                    type="out"
-                    link="https://www.instagram.com/p/CidwftIJvZR/"
-                    alt="vbw"
-                />
+              <div className={projectStyles.buttons}>
                 <Button
-                    text="Contact us"
-                    color="purple"
-                    icon={mailIcon}
-                    type="out"
-                    link="mailto:tcdanielh@berkeley.edu"
-                    alt="vbw email"
-                />
+                      text="Learn more"
+                      color="yellow"
+                      icon=""
+                      type="out"
+                      link="https://www.instagram.com/p/CidwftIJvZR/"
+                      alt="vbw"
+                  />
+                  <Button
+                      text="Contact us"
+                      color="purple"
+                      icon={mailIcon}
+                      type="out"
+                      link="mailto:tcdanielh@berkeley.edu"
+                      alt="vbw email"
+                  />
+                </div>
             </div>
             <div className={projectStyles.text}>
               <h1 className={projectStyles.yTitle}>Virtual Bauer Wurster</h1>
@@ -199,22 +207,24 @@ const ProjectsPage = () => {
               <div className={projectStyles.pImg}>
                 <img src={specialagent} alt="specialagent" />
               </div>
-              <Button
-                    text="Learn more"
-                    color="yellow"
-                    icon=""
-                    type="out"
-                    link="https://docs.google.com/document/d/1JgRPh_XGy0LnvXHXRrtrOh2ueeBHwbkTZK_3_Jtr1Ro/edit?usp=sharing"
-                    alt="specialagent website"
-                />
+              <div className={projectStyles.buttons}>
                 <Button
-                    text="Contact us"
-                    color="purple"
-                    icon={mailIcon}
-                    type="out"
-                    link="mailto:yaoxing2058@berkeley.edu"
-                    alt="specialagent email"
-                />
+                      text="Learn more"
+                      color="yellow"
+                      icon=""
+                      type="out"
+                      link="https://docs.google.com/document/d/1JgRPh_XGy0LnvXHXRrtrOh2ueeBHwbkTZK_3_Jtr1Ro/edit?usp=sharing"
+                      alt="specialagent website"
+                  />
+                  <Button
+                      text="Contact us"
+                      color="purple"
+                      icon={mailIcon}
+                      type="out"
+                      link="mailto:yaoxing2058@berkeley.edu"
+                      alt="specialagent email"
+                  />
+                </div>
             </div>
             <div className={projectStyles.text}>
               <h1 className={projectStyles.pTitle}>Special Agent</h1>
@@ -242,22 +252,24 @@ const ProjectsPage = () => {
               <div className={projectStyles.yImg}>
                 <img src={hif} alt="handif" />
               </div>
-              <Button
-                    text="Learn more"
-                    color="yellow"
-                    icon=""
-                    type="out"
-                    link="https://github.com/Alex-ARios/HandInteractionFramework"
-                    alt="vbw"
-                />
+              <div className={projectStyles.buttons}>
                 <Button
-                    text="Contact us"
-                    color="purple"
-                    icon={mailIcon}
-                    type="out"
-                    link="mailto:hand-if@xr.berkeley.edu"
-                    alt="vbw email"
-                />
+                      text="Learn more"
+                      color="yellow"
+                      icon=""
+                      type="out"
+                      link="https://github.com/Alex-ARios/HandInteractionFramework"
+                      alt="vbw"
+                  />
+                  <Button
+                      text="Contact us"
+                      color="purple"
+                      icon={mailIcon}
+                      type="out"
+                      link="mailto:hand-if@xr.berkeley.edu"
+                      alt="vbw email"
+                  />
+                </div>
             </div>
             <div className={projectStyles.text}>
               <h1 className={projectStyles.yTitle}>HandIF - Hand Interaction Framework</h1>
@@ -405,8 +417,8 @@ const ProjectsPage = () => {
               </p>
               <p>
                 Using a similar algorithm and methodology to the previously mentioned project in "Training Humans in VR for Sports," we are able to help with the
-                <span className={defaultStyles.red}>rehabilitation progress of stroke patients using VR/AR</span>, where we synthesize scenarios with tasks that are
-                <span className={defaultStyles.red}>incrementally difficult</span> for patients, personalized to each of their physical limiations.
+                <span className={defaultStyles.red}> rehabilitation progress of stroke patients using VR/AR</span>, where we synthesize scenarios with tasks that are
+                <span className={defaultStyles.red}> incrementally difficult</span> for patients, personalized to each of their physical limiations.
               </p>
               <p>
                 This research is in collaboration with Stanford Medical School (Neurology Dept.)

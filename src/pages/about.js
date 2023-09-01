@@ -35,6 +35,7 @@ const aboutPage = () => {
                 <MemberCard color="b" name="Lizzy Wang" position="Design, " team="TutoriVR" pic={lizzy}/>
                 <MemberCard color="b" name="Beni Issler" position="" team="CVRE" pic={beni}/>
                 <MemberCard color="b" name="James Hu" position="" team="Education" pic={empty}/>
+                <MemberCard color="b" name="Catherine Davodi" position="Outreach" team="" pic={empty}/>
               </div>
             </div>
           </div>
