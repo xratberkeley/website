@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby";
 
 import logo from "../images/logo.png";
@@ -21,29 +21,69 @@ const Nav = ({activePage}) => {
   //   )
   // }
 
+  const [shown, setShown] = useState(false);
+
   return (
     <section>
       <div className={navStyles.navBar}>
 
-      <img className={navStyles.logo} src={logo} alt="logo" />
+        <img className={navStyles.logo} src={logo} alt="logo" />
 
-      <Link to="/home/">
-        <div className={activePage=="home" ? navStyles.active : navStyles.item}>Home</div>
-      </Link>
-      <Link to="/about/">
-        <div className={activePage=="about" ? navStyles.active : navStyles.item}>Who we are</div>
-      </Link>
-      <Link to="/projects/">
-        <div className={activePage=="projects" ? navStyles.active : navStyles.item}>Projects</div>
-      </Link>
-      <a href="xr.berkeley.edu/decal/" target="_blank">
-        <div className={activePage=="decal" ? navStyles.active : navStyles.item}>Decal</div>
-      </a>
-      <a href="https://discord.com/invite/GvGUUCN" target="_blank">
-      <div className={navStyles.item}>Discord</div>
-      </a>
+        <Link to="/home/">
+          <div className={activePage=="home" ? navStyles.active : navStyles.item}>Home</div>
+        </Link>
+        <Link to="/about/">
+          <div className={activePage=="about" ? navStyles.active : navStyles.item}>Who we are</div>
+        </Link>
+        <Link to="/projects/">
+          <div className={activePage=="projects" ? navStyles.active : navStyles.item}>Projects</div>
+        </Link>
+        <a href="xr.berkeley.edu/decal/" target="_blank">
+          <div className={activePage=="decal" ? navStyles.active : navStyles.item}>Decal</div>
+        </a>
+        <a href="https://discord.com/invite/GvGUUCN" target="_blank">
+        <div className={navStyles.item}>Discord</div>
+        </a>
 
       </div>
+
+      <div className={navStyles.navBarSmallWrapper}>
+        <div className={navStyles.navBarSmall}>
+
+          <img className={navStyles.logo} src={logo} alt="logo" />
+
+          <div className={navStyles.smallNavButtonOutline} onClick={() => setShown(!shown)}>
+            <div className={navStyles.smallNavButton}>
+              <h1>...</h1>
+            </div>
+          </div>
+
+        </div>
+
+        {shown ? 
+        <div className={navStyles.navList}>
+            <Link to="/home/">
+              <div className={activePage=="home" ? navStyles.active : navStyles.item}>Home</div>
+            </Link>
+            <Link to="/about/">
+              <div className={activePage=="about" ? navStyles.active : navStyles.item}>Who we are</div>
+            </Link>
+            <Link to="/projects/">
+              <div className={activePage=="projects" ? navStyles.active : navStyles.item}>Projects</div>
+            </Link>
+            <a href="xr.berkeley.edu/decal/" target="_blank">
+              <div className={activePage=="decal" ? navStyles.active : navStyles.item}>Decal</div>
+            </a>
+            <a href="https://discord.com/invite/GvGUUCN" target="_blank">
+            <div className={navStyles.item}>Discord</div>
+            </a>
+        </div>
+        :
+        ""
+      }
+        
+      </div>
+
     </section>
   )
 }

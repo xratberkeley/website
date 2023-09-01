@@ -67,7 +67,7 @@ const HomePage = () => {
                     More information can also be found on our application forms:
                   </p>
                   <div className={homeStyles.applyButtons}>
-                    <Button text="Club member application"
+                    <Button text="Club application"
                             color="red"
                             icon=""
                             type="out"
@@ -104,6 +104,7 @@ const HomePage = () => {
                           link=""
                           alt=""
                   /></span></p>
+                {shown == "project teams" ? <ProjectTeams size="small" /> : ""}
               </div>
 
               <div className={homeStyles.section}>
@@ -116,6 +117,7 @@ const HomePage = () => {
                           link=""
                           alt=""
                   /></span></p>
+                {shown == "sponsor" ? <Sponsor size="small" /> : ""}
               </div>
 
               <div className={homeStyles.section}>
@@ -128,6 +130,7 @@ const HomePage = () => {
                           link=""
                           alt=""
                   /></span></p>
+                {shown == "decal" ? <DeCal size="small" /> : ""}
               </div>
 
               <div className={homeStyles.section}>
@@ -140,6 +143,7 @@ const HomePage = () => {
                           link=""
                           alt=""
                   /></span></p>
+                {shown == "cvre" ? <CVRE size="small" /> : ""}
               </div>
 
               <div className={homeStyles.boxLine}>
@@ -149,7 +153,7 @@ const HomePage = () => {
               </div>
 
               {/* discord */}
-              <p>Or, join our <a href="https://discord.com/invite/GvGUUCN" target="_blank" alt="discord link" class={defaultStyles.yellowUnderline}>Discord</a> to learn more.</p>
+              <p>Or, join our <a href="https://discord.com/invite/GvGUUCN" target="_blank" alt="discord link" className={defaultStyles.yellowUnderline}>Discord</a> to learn more.</p>
             </div>
 
             {/* image */}
@@ -162,34 +166,34 @@ const HomePage = () => {
                 </video>
               </div>
 
-              <div className={homeStyles.buttonWrapper}>
-                <Button
-                  text="Hear from us"
-                  color="purple"
-                  icon={mailIcon}
-                  link="https://docs.google.com/forms/d/e/1FAIpQLSeCBIxOfEhPJx3JxXPbFr9ZfGf7zQZ2O-XgSWDZabY7xjmujw/viewform"
-                  alt="mailing list google form"
-                  type="out"
-                />
+              <div className={homeStyles.buttonWrapperWrapper}>
+                <div className={homeStyles.buttonWrapper}>
+                  <Button
+                    text="Hear from us"
+                    color="purple"
+                    icon={mailIcon}
+                    link="https://docs.google.com/forms/d/e/1FAIpQLSeCBIxOfEhPJx3JxXPbFr9ZfGf7zQZ2O-XgSWDZabY7xjmujw/viewform"
+                    alt="mailing list google form"
+                    type="out"
+                  />
+                </div>
+                <div className={homeStyles.buttonWrapper}>
+                  <Button
+                    text="Talk to us"
+                    color="yellow"
+                    icon={discordIcon}
+                    link="https://discord.com/invite/GvGUUCN"
+                    alt="discord link"
+                    type="nav"
+                  />
+                </div>
               </div>
-              <div className={homeStyles.buttonWrapper}>
-                <Button
-                  text="Talk to us"
-                  color="yellow"
-                  icon={discordIcon}
-                  link="https://discord.com/invite/GvGUUCN"
-                  alt="discord link"
-                  type="nav"
-                />
-              </div>
-
-
             </div>
 
-            {shown == "project teams" ? <ProjectTeams /> : ""}
-            {shown == "sponsor" ? <Sponsor /> : ""}
-            {shown == "decal" ? <DeCal /> : ""}
-            {shown == "cvre" ? <CVRE /> : ""}
+            {shown == "project teams" ? <ProjectTeams size="big" /> : ""}
+            {shown == "sponsor" ? <Sponsor size="big" /> : ""}
+            {shown == "decal" ? <DeCal size="big" /> : ""}
+            {shown == "cvre" ? <CVRE size="big" /> : ""}
 
           </div>
 

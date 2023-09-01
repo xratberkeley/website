@@ -102,3 +102,10 @@ svg {
     border-bottom: 2px solid var(--yellow);
     padding-bottom: 2px;
 }
+
+@media (max-width: 500px) {
+    .bodyWrapper {
+        margin-right: 7%;
+        margin-left: 3%;
+    }
+}

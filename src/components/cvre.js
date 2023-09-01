@@ -7,10 +7,10 @@ import Button from "../components/button";
 import * as homeStyles from "../styles/home.module.css"
 import * as defaultStyles from "../styles/default.module.css"
 
-const CVRE = () => {
+const CVRE = ({size}) => {
 
   return (
-    <section className={homeStyles.sectionWrapper}>
+    <section className={size == 'big' ? homeStyles.sectionWrapper : homeStyles.sectionSmall}>
         <div className={homeStyles.diagonalDown} />
         <div className={homeStyles.horizontal}/>
         <div className={homeStyles.outline}>

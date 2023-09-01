@@ -17,6 +17,10 @@
     position: relative;
 }
 
+.navBarSmallWrapper {
+    display: none;
+}
+
 .navBarDecal {
     margin: 40px -1em 0 -1em;
     display: flex;
@@ -99,4 +103,82 @@
     font-family: "HYShortSamul";
     font-weight: light;
     font-size: 24px;
+}
+
+@media (max-width: 968px) {
+    .item {
+        padding: 4px 0.8em 0 0.8em;
+    }
+
+    .active {
+        padding: 4px 0.8em 0 0.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        display: none;
+    }
+
+    .navBarSmallWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navBarSmall {
+        margin: 32px -1em 0 -1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0.85em 5%;
+        background-color: rgba(160, 255, 227, 0.13);
+        border-top: 1px solid var(--blue);
+        border-bottom: 1px solid var(--blue);
+        position: relative;
+    }
+
+    .smallNavButtonOutline {
+        border: 1px solid var(--blue-transparent);
+        padding: 1px;
+        margin-right: 2em;
+    }
+
+    .smallNavButton {
+        border: 1px solid var(--blue);
+        background-color: var(--blue-transparent);
+        width: 2em;
+        height: 2em;
+    }
+
+    .navBarSmall h1 {
+        writing-mode: vertical-lr;
+        cursor: pointer;
+        color: var(--blue);
+        letter-spacing: 0;
+        margin-top: 5px;
+        margin-left: -2px;
+    }
+
+    .logo {
+        height: 4em;
+        width: 4em;
+        top: 0;
+    }
+
+    .navList {
+        border: 1px solid var(--blue);
+        background-color: var(--blue-transparent);
+        margin: 0.5em 2em 0 0;
+        padding: 0.5em;
+        padding-left: 2em;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        align-self: flex-end;
+    }
+
+    .item {
+        background-color: transparent;
+    }
 }

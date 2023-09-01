@@ -11,6 +11,10 @@
     width: 100%;
 }
 
+h1 {
+    margin: 0;
+}
+
 .officerWrapper {
     background:
         linear-gradient(to right, var(--purple) 1px, transparent 1px) 0 0,
@@ -46,7 +50,8 @@
 .cards {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 2em;
+    row-gap: 4rem;
     flex-wrap: wrap;
     justify-content: space-around;
 }

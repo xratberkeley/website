@@ -7,16 +7,16 @@ import Button from "../components/button";
 import * as homeStyles from "../styles/home.module.css"
 import * as defaultStyles from "../styles/default.module.css"
 
-const ProjectTeams = () => {
+const ProjectTeams = ({size}) => {
 
   return (
-    <section className={homeStyles.sectionWrapper}>
+    <section className={size == 'big' ? homeStyles.sectionWrapper : homeStyles.sectionSmall}>
         <div className={homeStyles.diagonal} />
         <div className={homeStyles.horizontal}/>
         <div className={homeStyles.outline}>
             <div className={homeStyles.sectionContent}>
                 <p>
-                <span className={defaultStyles.red}>Make reality with us. </span>We are defining new paradigms in HCI with VR enhanced human-UAV collaboration, 
+                <span className={defaultStyles.red}>Make reality with us.</span>&nbsp;We are defining new paradigms in HCI with VR enhanced human-UAV collaboration, 
                 revolutionizing healthcare with novel neurological therapies, using biofeedback to create powerful experiences of harmony and insight, and more.
                 </p>
                 <p>

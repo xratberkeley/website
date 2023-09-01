@@ -87,6 +87,10 @@
 
 /* sections */
 
+.sectionSmall {
+    display: none;
+}
+
 .diagonal {
     height: 0;
     width: 200px;
@@ -139,6 +143,15 @@
     gap: 32px;
 }
 
+.buttonWrapperWrapper {
+    max-width: fit-content;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 .buttonWrapper {
     max-width: fit-content;
     align-self: center;
@@ -187,6 +200,7 @@ ul p {
 
 .apply h1 {
     margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 .apply ul {
@@ -198,4 +212,82 @@ ul p {
     flex-direction: row;
     gap: 1rem;
     margin: 1rem 0;
+}
+
+
+/* SCREEN SIZES */
+
+@media (max-width: 1280px) {
+    .topHalf {
+        flex-direction: column-reverse;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .rightCol {
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttonWrapperWrapper {
+        flex-direction: row;
+    }
+
+    .sectionSmall {
+        display: flex;
+        margin-top: 12px;
+    }
+
+    .diagonal {
+        display: none;
+    }
+
+    .diagonalDown {
+        display: none;
+    }
+
+    .horizontal {
+        display: none;
+    }
+
+    .sectionWrapper {
+        display: none;
+    }
+
+    .cornerBorders {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .apply {
+        padding: 2em;
+    }
+
+    .sectionContent {
+        padding: 2em;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .rightCol {
+        gap: 0;
+    }
+
+    .buttonWrapperWrapper {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .cornerBorders video {
+        max-width: 15rem;
+    }
+
+    .applyButtons {
+        flex-direction: column;
+        gap: 4px;
+        align-items: center;
+    }
 }

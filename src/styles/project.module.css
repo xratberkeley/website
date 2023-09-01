@@ -68,6 +68,13 @@
     align-items: center;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
 .triangle {
     width: 0; 
     height: 0; 
@@ -75,4 +82,35 @@
     border-right: 0.7rem solid transparent;
     border-top: 1rem solid var(--blue-transparent);
     margin-left: 50%;
+}
+
+@media (max-width: 968px) {
+    .team {
+        flex-direction: column;
+        margin: 2.5em 0;
+    }
+
+    .buttons {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .nontext {
+        margin-bottom: 1.5em;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .nontext {
+        margin-bottom: 1.5em;
+    }
+
+    .text {
+        gap: 1em;
+    }
 }
