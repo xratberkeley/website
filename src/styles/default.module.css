@@ -44,7 +44,7 @@ h1 {
     color: var(--white);
     font-family: "HYShortSamul";
     font-weight: normal;
-    font-size: 36px;
+    font-size: 32px;
     letter-spacing: 3.24px;
 }
 
@@ -52,7 +52,7 @@ h2 {
     color: var(--white);
     font-family: "HYShortSamul";
     font-weight: normal;
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing: 3.24px;
 }
 
@@ -60,7 +60,7 @@ p {
     color: var(--white);
     font-family: "SpaceMono";
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 1.6px;
     margin: 0;
 }

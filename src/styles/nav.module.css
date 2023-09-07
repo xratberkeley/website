@@ -44,17 +44,32 @@
     color: var(--blue);
     font-family: "HYShortSamul";
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1.8px;
     padding: 4px 1.5em 0 1.5em;
     border: 1px solid transparent;
+    transition: linear 0.1s;
+}
+
+.item:hover {
+    background:
+        linear-gradient(to right, var(--white) 1px, transparent 1px) 0 0,
+        linear-gradient(to right, var(--white) 1px, transparent 1px) 0 100%,
+        linear-gradient(to left, var(--white) 1px, transparent 1px) 100% 0,
+        linear-gradient(to left, var(--white) 1px, transparent 1px) 100% 100%,
+        linear-gradient(to bottom, var(--white) 1px, transparent 1px) 0 0,
+        linear-gradient(to bottom, var(--white) 1px, transparent 1px) 100% 0,
+        linear-gradient(to top, var(--white) 1px, transparent 1px) 0 100%,
+        linear-gradient(to top, var(--white) 1px, transparent 1px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
 }
 
 .active {
     color: var(--blue);
     font-family: "HYShortSamul";
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1.8px;
     padding: 4px 1.5em 0 1.5em;
     border: 1px solid transparent;
@@ -86,6 +101,7 @@
     border-right: 1px solid var(--blue);
     gap: 1em;
     height: 100%;
+    width: 16em;
 }
 
 .decal .active {
@@ -93,16 +109,70 @@
     width: fit-content;
 }
 
+.decal .group .active {
+    padding-left: 1.8em;
+}
+
 .decal .item {
     padding: 6px 0.6em 0 0.6em;
     width: fit-content;
+}
+
+.decal .title {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .decal .arrow {
     color: var(--blue);
     font-family: "HYShortSamul";
     font-weight: light;
-    font-size: 24px;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.decal .arrowOpen {
+    color: var(--blue);
+    font-family: "HYShortSamul";
+    font-weight: light;
+    font-size: 20px;
+    margin-top: 0px;
+    transform: rotate(90deg);
+    margin-right: -0.8em;
+}
+
+.decal .group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.decal .subLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border-right: 2px solid var(--blue);
+    margin-top: 8px;
+    margin-right: 1em;
+}
+
+.decal .subLinks .item {
+    font-size: 20px;
+    color: var(--grey);
+    text-align: right;
+}
+
+.decal .subLinks .item:hover {
+    color: var(--white);
+    background: none;
+}
+
+.decal .subLinks .active {
+    font-size: 20px;
+    color: var(--white);
+    text-align: right;
+    background: none;
 }
 
 @media (max-width: 968px) {

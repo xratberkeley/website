@@ -38,9 +38,9 @@ const Nav = ({activePage}) => {
         <Link to="/projects/">
           <div className={activePage=="projects" ? navStyles.active : navStyles.item}>Projects</div>
         </Link>
-        <a href="xr.berkeley.edu/decal/" target="_blank">
+        <Link to="/decal/">
           <div className={activePage=="decal" ? navStyles.active : navStyles.item}>Decal</div>
-        </a>
+        </Link>
         <a href="https://discord.com/invite/GvGUUCN" target="_blank">
         <div className={navStyles.item}>Discord</div>
         </a>
@@ -71,9 +71,9 @@ const Nav = ({activePage}) => {
             <Link to="/projects/">
               <div className={activePage=="projects" ? navStyles.active : navStyles.item}>Projects</div>
             </Link>
-            <a href="xr.berkeley.edu/decal/" target="_blank">
+            <Link to="/decal/">
               <div className={activePage=="decal" ? navStyles.active : navStyles.item}>Decal</div>
-            </a>
+            </Link>
             <a href="https://discord.com/invite/GvGUUCN" target="_blank">
             <div className={navStyles.item}>Discord</div>
             </a>

@@ -40,7 +40,7 @@
     color: var(--yellow);
     font-family: "HYShortSamul";
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1.8px;
     background-color: var(--yellow-transparent);
     border: 1px solid var(--yellow);
@@ -69,7 +69,7 @@
     color: var(--purple);
     font-family: "HYShortSamul";
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1.8px;
     background-color: var(--purple-transparent-light);
     border: 1px solid var(--purple);
@@ -98,7 +98,7 @@
     color: var(--red);
     font-family: "HYShortSamul";
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1.8px;
     background-color: var(--red-transparent);
     border: 1px solid var(--red);

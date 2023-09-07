@@ -37,3 +37,17 @@ h2 {
     flex-direction: row;
     gap: 4px;
 }
+
+.toc {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+.toc h2 {
+    font-size: 20px;
+}
+
+.toc p {
+    font-size: 12px;
+}

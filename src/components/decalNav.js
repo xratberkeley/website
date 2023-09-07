@@ -16,13 +16,26 @@ const DecalNav = ({activePage, open}) => {
             <div className={activePage=="home" ? navStyles.active : navStyles.item}>Home/Announcements</div>
         </Link>
         <div className={navStyles.group}>
-            <div className={navStyles.title}>
-                <div className={navStyles.arrow}>></div>
-                <Link to="/decal/homework">
-                    <div className={activePage=="homework" ? navStyles.active : navStyles.item}>Homework</div>
-                </Link>
-            </div>
-            <div className={navStyles.subLinks}>
+            <Link to="/decal/homework" className={navStyles.title}>
+              <div className={open=="homework" ? navStyles.arrowOpen : navStyles.arrow}>></div>
+              <div className={open=="homework" ? navStyles.active : navStyles.item}>Homework</div>
+            </Link>
+            <div className={navStyles.subLinks} style={{display: open=="homework" ? "flex" : "none"}}>
+              <Link to="/decal/homework/hw1">
+                <div className={activePage=="hw1" ? navStyles.active : navStyles.item}>Homework 1: The Rube Goldberg Ball Machine</div>
+              </Link>
+              <Link to="/decal/homework/hw2">
+                <div className={activePage=="hw2" ? navStyles.active : navStyles.item}>Homework 2: Music Visualizer</div>
+              </Link>
+              <Link to="/decal/homework/hw3">
+                <div className={activePage=="hw3" ? navStyles.active : navStyles.item}>Homework 3: Fractal Generation</div>
+              </Link>
+              <Link to="/decal/homework/hw4">
+                <div className={activePage=="hw4" ? navStyles.active : navStyles.item}>Homework 4: Pong</div>
+              </Link>
+              <Link to="/decal/homework/hw5">
+                <div className={activePage=="hw5" ? navStyles.active : navStyles.item}>Homework 5: Collisions, Raycasting, and Triggers</div>
+              </Link>
             </div>    
         </div>
         <Link to="/decal/labs/">
