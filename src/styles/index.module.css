@@ -136,3 +136,15 @@
       transform:rotate(360deg);
     }
   }
+
+  @media (max-width: 900px) {
+    .tag {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .mainWrapper h1 {
+        text-align: center;
+    }
+  }

@@ -33,6 +33,7 @@
     "gatsby-transformer-sharp": "^5.8.0",
     "konva": "^9.2.0",
     "react": "^18.2.0",
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-konva": "^18.2.10",
     "react-powerglitch": "^1.0.0",

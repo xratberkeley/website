@@ -78,7 +78,7 @@ const Button = ({text, color, icon, type, link, alt}) => {
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}
                 >
-                    <a href={link} alt={alt} className={buttonStyles.purple}>
+                    <a href={link} alt={alt} className={buttonStyles.purple} target="_blank">
                         {text}
                         {icon ? <img className={buttonStyles.img} src={icon} /> : ""}
                     </a>
@@ -94,7 +94,7 @@ const Button = ({text, color, icon, type, link, alt}) => {
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}
                 >
-                    <a href={link} alt={alt} className={buttonStyles.yellow}>
+                    <a href={link} alt={alt} className={buttonStyles.yellow} target="_blank">
                         {text}
                         {icon ? <img className={buttonStyles.img} src={icon} /> : ""}
                     </a>

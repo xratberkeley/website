@@ -47,7 +47,7 @@ const decalHw = () => {
                             link="/homework/hw2"
                             alt="hw2"
                     /></span></p>
-                    <p><span className={decalStyles.redLink}>
+                    {/* <p><span className={decalStyles.redLink}>
                     <Button text="Homework 3: Fractal Generation"
                             color="red"
                             icon={EastIcon} 
@@ -70,7 +70,7 @@ const decalHw = () => {
                             type="underline"
                             link="/homework/hw5"
                             alt="hw5"
-                    /></span></p>
+                    /></span></p> */}
                 </div>
                 
             </div>

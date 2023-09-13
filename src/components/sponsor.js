@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 
 import logo from "../images/logo.png";
 import Button from "../components/button";
+import pdf from '../static/XR@B-Sponsorship-Possibilities.pdf'
 
 import * as homeStyles from "../styles/home.module.css"
 import * as defaultStyles from "../styles/default.module.css"
@@ -36,7 +37,7 @@ const Sponsor = ({size}) => {
                         color="yellow" 
                         icon=""
                         type="out"
-                        link="XR@B-Sponsorship-Possibilities.pdf"
+                        link={pdf}
                         alt="sponsorship pdf"
                     />
                 </div>
