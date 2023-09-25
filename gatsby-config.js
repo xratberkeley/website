@@ -6,7 +6,7 @@ module.exports = {
     title: `XR@B Website`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-theme-ui", "gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
+  plugins: ["gatsby-plugin-theme-ui", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
@@ -27,3 +27,5 @@ module.exports = {
     __key: "pages"
   }]
 };
+
+// "gatsby-plugin-google-gtag"

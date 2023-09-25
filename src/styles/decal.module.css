@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    overflow: auto;
 }
 
 .redLink {
@@ -53,7 +54,6 @@ h2 {
 }
 
 .textWrapper p {
-    font-size: inherit;
     line-height: 1.6;
 }
 
@@ -75,6 +75,10 @@ h2 {
     color: var(--white);
 }
 
+.textWrapper img {
+    max-width: 100%;
+}
+
 .textWrapper .yellowUnderline {
     color: var(--yellow);
     border-bottom: 1px solid var(--yellow);
@@ -90,8 +94,9 @@ h2 {
     line-height: 2;
     padding: 12px 16px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
+    font-size: 14px;
     position: relative;
+    overflow-x: auto;
 }
 
 .copy {
@@ -113,4 +118,10 @@ h2 {
 
 .textWrapper .resources {
     margin-top: -2em;
+}
+
+@media (max-width: 1024px) {
+    .code {
+        width: 90%;
+    }
 }

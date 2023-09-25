@@ -27,10 +27,10 @@ const DecalNav = ({activePage, open}) => {
               <Link to="/decal/homework/hw2">
                 <div className={activePage=="hw2" ? navStyles.active : navStyles.item}>Homework 2: Music Visualizer</div>
               </Link>
-              {/* <Link to="/decal/homework/hw3">
+              <Link to="/decal/homework/hw3">
                 <div className={activePage=="hw3" ? navStyles.active : navStyles.item}>Homework 3: Fractal Generation</div>
               </Link>
-              <Link to="/decal/homework/hw4">
+              {/* <Link to="/decal/homework/hw4">
                 <div className={activePage=="hw4" ? navStyles.active : navStyles.item}>Homework 4: Pong</div>
               </Link>
               <Link to="/decal/homework/hw5">
@@ -53,10 +53,10 @@ const DecalNav = ({activePage, open}) => {
                   <Link to="/decal/labs/oculus/lab1">
                     <div className={activePage=="oculuslab1" ? navStyles.active : navStyles.item}>Oculus Lab 1</div>
                   </Link>
-                  {/* <Link to="/decal/labs/oculus/lab2">
-                    <div className={activePage=="lab2" ? navStyles.active : navStyles.item}>Lab 2</div>
+                  <Link to="/decal/labs/oculus/lab2">
+                    <div className={activePage=="oculuslab2" ? navStyles.active : navStyles.item}>Oculus Lab 2</div>
                   </Link>
-                  <Link to="/decal/labs/oculus/lab3">
+                  {/* <Link to="/decal/labs/oculus/lab3">
                     <div className={activePage=="lab3" ? navStyles.active : navStyles.item}>Lab 3</div>
                   </Link>
                   <Link to="/decal/labs/oculus/lab4">
